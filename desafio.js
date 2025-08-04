@@ -48,6 +48,90 @@ console.log(`🌟Após meus treinamentos, meu ataque e minha defesa melhoraram m
 console.log(`🌟Vida suficiente? ${vidaSuficiente} | Ataque forte? ${ataqueForte} | Nível avançado? ${nivelAvancado}.`);
 console.log(`🌟Pode enfrentar o Guardião? ${podeEnfrentarGuardiao}`);
 console.log(`🌟isso não será problema para mim, sei que com as minhas habilidades e minha magia posso enfrentar qualquer desafio!`);
+console.log("");
+
+// Nível 2 - Continuação da jornada 
+
+let nomePersonagem = "Selene";
+let classeNivel2 = "Mago"; 
+let vidaAtual = 140;
+let vidaMaxima = 200;
+let manaAtual = 50;
+let manaMaxima = 50;
+let nivel2 = 1;
+let experiencia = 0;
+let ouroNivel2 = 220;
+
+// Novos atributos para batalha
+let forca = 50;
+let defesa = 50;
+let agilidade = 20;
+let combatesVencidos = 3;
+
+// Estado atual da história (continue de onde parou no Nível 1)
+let localAtual = "cidade de Artenas";
+let missaoAtual = "Combater o retorno de forças sombrias adormecidas";
+
+// Capítulo 1: condicionais simples na narrativa 
+console.log("CAPÍTULO1⚠️: Uma força sombria foi detectada, e pretende derrotar todas da cidade de Artenas");
+
+// Verificação baseada no nível do personagem
+if (nivel <=5 ) {
+    console.log("⚠️ Um Mago o adverte: 'Você ainda é leigo para está missão, ninguem abaixo do nível 5 foi capaz de vencer essa batalha!");
+    console.log("Mas " + nomePersonagem + " decide prosseguir mesmo assim...");
+}
+
+// Verificação de recursos especiais
+if (ouro >= 100) {
+    console.log("💰 Você possui muitas moedas! Há um risco de atrair interesses...");
+}
+
+// Verificação de classe específica
+if (classe = "Mago") {
+    console.log("✨ Você é o personagem que precisamos para derrotar esse inimigo!");
+}
+console.log("");
+
+
+// CAPÍTULO 2: Escolha Estratégica
+console.log("⚔️ CAPÍTULO 2: Selene inicia sua batalha para tentar salvar a cidade de Artenas");
+
+// Escolha baseada em recursos
+if (ouro >= 50) {
+    console.log("💰 Com ouro suficiente, " + nomePersonagem + " compra equipamentos melhores!");
+    forca += 5;
+    defesa += 3;
+    ouro -= 50;
+    console.log("Força e defesa aumentaram! Ouro restante: " + ouro);
+} else {
+    console.log("💔 Sem ouro suficiente, " + nomePersonagem + " deve confiar apenas em suas habilidades!");
+    console.log("A adversidade fortalece o espírito! Agilidade +2");
+    agilidade += 2;
+}
+
+// Sistema de recompensas narrativo
+if (experiencia >= 100) {
+    console.log("🎉 A sabedoria acumulada se manifesta! " + nomePersonagem + " sente-se mais poderoso!");
+    nivel++;
+    experiencia = 0;
+    vidaAtual = vidaMaxima; // Vida restaurada
+} else {
+    console.log("📊 " + nomePersonagem + " ainda busca mais conhecimento e experiência...");
+    console.log("Sabedoria atual: " + experiencia + "/100");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -72,12 +72,17 @@ let combatesVencidos = 3;
 let localAtual = "cidade de Artenas";
 let missaoAtual = "Combater o retorno de forças sombrias adormecidas";
 
+// PRÓLOGO - Conexão com o Nível 1
+console.log("Depois de tudo que aconteceu em " + localAtual + ", a corajosa " + nomePersonagem);
+console.log("da classe " + classe + " encara mais um desafio em sua jornada...");
+console.log("");
+
 // Capítulo 1: condicionais simples na narrativa 
-console.log("CAPÍTULO1⚠️: Uma força sombria foi detectada, e pretende derrotar todas da cidade de Artenas");
+console.log("CAPÍTULO1⚠️: Uma força sombria foi detectada, e pretende derrotar todos da cidade de Artenas");
 
 // Verificação baseada no nível do personagem
 if (nivel <=5 ) {
-    console.log("⚠️ Um Mago o adverte: 'Você ainda é leigo para está missão, ninguem abaixo do nível 5 foi capaz de vencer essa batalha!");
+    console.log("⚠️ Um Mago o adverte: Você ainda é leigo para está missão, ninguem abaixo do nível 5 foi capaz de vencer essa batalha!");
     console.log("Mas " + nomePersonagem + " decide prosseguir mesmo assim...");
 }
 
@@ -144,8 +149,24 @@ if (vidaAtual <= 30) {
     poderInimigo -= (forca / 2);
     vidaAtual += 10; // Recupera um pouco de vida
 }
+console.log("");
+
+console.log("📜 === CONTINUAÇÃO DA JORNADA DE " + nomePersonagem + " ===");
+console.log("");
 
 
+// EPÍLOGO - Resultado final
+if (poderInimigo <= 0) {
+    console.log("🎉 VITÓRIA ÉPICA! " + nomePersonagem + " triunfa!");
+    experiencia += 100;
+    combatesVencidos++;
+    console.log("A fama de " + nomePersonagem + " cresce...");
+} else {
+    console.log("⚔️ A batalha foi difícil, mas " + nomePersonagem + " resiste e vive para enfrentar novos perigos!");
+}
+
+console.log("");
+console.log("🏁 CAPÍTULO ENERRADO - Em breve um novo desafio te espera!"); 
 
 
 

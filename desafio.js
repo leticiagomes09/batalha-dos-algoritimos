@@ -98,7 +98,7 @@ console.log("⚔️ CAPÍTULO 2: Selene inicia sua batalha para tentar salvar a 
 
 // Escolha baseada em recursos
 if (ouro >= 100) {
-    console.log( "ouro suficiente!" + nomePersonagem  " decide melhorar seus equipamentos!");
+    console.log( "Ouro suficiente!" + nomePersonagem +  " decide melhorar seus equipamentos!");
     forca += 5;
     defesa += 3;
     ouro -= 50;
@@ -111,7 +111,7 @@ if (ouro >= 100) {
 
 // Sistema de recompensas narrativo
 if (experiencia >= 100) {
-    console.log("🎉 A sabedoria acumulada se manifesta! " + nomePersonagem + " sente-se mais poderoso!");
+    console.log("🎉 A sabedoria acumulada traz resultados! " + nomePersonagem + " sente-se mais poderoso!");
     nivel++;
     experiencia = 0;
     vidaAtual = vidaMaxima; // Vida restaurada

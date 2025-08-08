@@ -152,7 +152,6 @@ if (vidaAtual <= 30) {
 console.log("");
 
 console.log("📜 === CONTINUAÇÃO DA JORNADA DE " + nomePersonagem + " ===");
-console.log("");
 
 // EPÍLOGO - Resultado final
 if (poderInimigo <= 0) {

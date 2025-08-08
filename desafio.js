@@ -57,7 +57,7 @@ let classeNivel2 = "Mago";
 let vidaAtual = 140;
 let vidaMaxima = 200;
 let manaAtual = 50;
-let manaMaxima = 50;
+let manaMaxima = 100;
 let nivel2 = 1;
 let experiencia = 50;
 let ouroNivel2 = 220;
@@ -119,9 +119,31 @@ if (experiencia >= 100) {
     console.log("📊 " + nomePersonagem + " ainda busca mais conhecimento e experiência...");
     console.log("Sabedoria atual: " + experiencia + "/100");
 }
+console.log("");
 
 
+// CAPÍTULO 3: A Batalha Decisiva
+console.log("⚔️ CAPÍTULO 3: O confronto final está prestes a começar!");
+let poderInimigo = 30;
 
+// Sistema de combate inteligente baseado na situação
+if (vidaAtual <= 30) {
+    console.log("🆘 A beira da derrota, " + nomePersonagem + " aposta tudo em um último ataque!");
+    console.log("Ataque final com toda a força restante!");
+    poderInimigo -= (forca * 2);
+} else if (manaAtual >= 30 && classe === "Mago") {
+    console.log("✨ " + nomePersonagem + " absorve todo seu poder mágico!");
+    console.log("Magia devastadora!");
+    poderInimigo -= (forca + 20);
+    manaAtual -= 30;
+} else if (agilidade >= 15) {
+    console.log("🏃‍♂️ Com movimentos rápidos e precisos, realiza um golpe perfeito!");
+    poderInimigo -= forca;
+} else {
+    console.log("🛡️ Adota uma postura estratégica e se defende com cautela!");
+    poderInimigo -= (forca / 2);
+    vidaAtual += 10; // Recupera um pouco de vida
+}
 
 
 

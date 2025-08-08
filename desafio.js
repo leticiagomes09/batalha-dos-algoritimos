@@ -166,11 +166,48 @@ if (poderInimigo <= 0) {
 
 console.log("");
 console.log("🏁 CAPÍTULO ENERRADO - Em breve um novo desafio te espera!"); 
+console.log("");
+
+// === CONTINUAÇÃO DA SAGA ÉPICA - NÍVEL 3 ===
+// Mantenha seu personagem dos níveis anteriores e adicione:
 
 
+// === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
+// Inventário mágico - primeira coleção arcana
+let inventario = ["Poção de Mana", "Cajado de fogo", "Poção da vida", "Cristal Elemental"];
+let aliados = ["Cavaleiro Espectral", "Feiticeira das Sombras", "Demônio Selado"];
+let inimigosEncontrados = ["Goblin Sombrio", "Orc Berserker", "Dragão Menor"];
+let salasCastelo = ["Biblioteca Arcana", "Cozinha Selestial", "Banheiro Magico"];
+let tesouroColetado = [];
 
+console.log("🏰 === " + nomePersonagem + " ADENTRA O CASTELO DOS ARRAYS ===");
+console.log("Após triunfar nos desafios anteriores,nossa maga avança para um novo território...");
+console.log("Inventário inicial: " + inventario.length + " itens mágicos");
+console.log("");
 
+// === CAPÍTULO 1: DESCOBERTA DAS COLEÇÕES ARCANAS ===
+console.log("");
+console.log("🗝️ CAPÍTULO 1: Os Baús Arcanos do Castelo");
 
+// 3.5.1. Declaração e inicialização
+let pocoesEncontradas = ["Poção da Beleza", "Força Seprema", "Invisibilidade", "Velocidade Máxima"];
+let armadilhasAtiradas = []; // Array vazio - será preenchido na aventura
+
+// 3.5.2. Acesso e modificação de elementos
+console.log("🧪 Primeira poção encontrada: " + pocoesEncontradas[0]);
+console.log("⚗️ Total de poções mágicas: " + pocoesEncontradas.length);
+
+// Modificando elemento específico
+inventario[0] = "Poção de Vida Suprema"; // Upgrade da poção!
+console.log("✨ " + nomePersonagem + " aprimorou uma poção!");
+
+// 3.5.3. Métodos de array fundamentais
+inventario.push("Espada Encantada"); // Adiciona no final
+console.log("Novo item adicionado! Inventário: " + inventario);
+
+let itemRemovido = inventario.pop(); // Remove do final
+console.log("📤 Item removido: " + itemRemovido);
+console.log("🎒 Inventário atual: " + inventario);
 
 
 

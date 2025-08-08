@@ -59,7 +59,7 @@ let vidaMaxima = 200;
 let manaAtual = 50;
 let manaMaxima = 50;
 let nivel2 = 1;
-let experiencia = 0;
+let experiencia = 50;
 let ouroNivel2 = 220;
 
 // Novos atributos para batalha
@@ -83,12 +83,12 @@ if (nivel <=5 ) {
 
 // Verificação de recursos especiais
 if (ouro >= 100) {
-    console.log("💰 Você possui muitas moedas! Há um risco de atrair interesses...");
+    console.log("💰 Você possui muitas moedas! Cuidado! Há um risco de atrair interesses...");
 }
 
 // Verificação de classe específica
 if (classe = "Mago") {
-    console.log("✨ Você é o personagem que precisamos para derrotar esse inimigo!");
+    console.log("✨ Se prepare para a batalha! Você é  o personagem que precisamos para derrotar esse inimigo!");
 }
 console.log("");
 
@@ -97,8 +97,8 @@ console.log("");
 console.log("⚔️ CAPÍTULO 2: Selene inicia sua batalha para tentar salvar a cidade de Artenas");
 
 // Escolha baseada em recursos
-if (ouro >= 50) {
-    console.log("💰 Com ouro suficiente, " + nomePersonagem + " compra equipamentos melhores!");
+if (ouro >= 100) {
+    console.log( "ouro suficiente!" + nomePersonagem  " decide melhorar seus equipamentos!");
     forca += 5;
     defesa += 3;
     ouro -= 50;

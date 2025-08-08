@@ -186,7 +186,7 @@ console.log("");
 
 // === CAPÍTULO 1: DESCOBERTA DAS COLEÇÕES ARCANAS ===
 console.log("");
-console.log("🗝️ CAPÍTULO 1: Os Baús Arcanos do Castelo");
+console.log("🗝️ CAPÍTULO 1: Explorando os Baús Mágicos do Castelo");
 
 // 3.5.1. Declaração e inicialização
 let pocoesEncontradas = ["Poção da Beleza", "Força Seprema", "Invisibilidade", "Velocidade Máxima"];
@@ -211,7 +211,7 @@ console.log("🎒 Inventário atual: " + inventario);
 
 // === CAPÍTULO 2: O RITUAL DA EXPLORAÇÃO ===
 console.log("");
-console.log("⚔️ CAPÍTULO 2: Explorando as Masmorras Sistemáticas");
+console.log("⚔️ CAPÍTULO 2: Sala por sala, Magia revelada");
 
 // Explorando cada sala do castelo usando for tradicional
 console.log("🗺️ Começando exploração das " + salasCastelo.length + " salas místicas...");
@@ -221,20 +221,43 @@ console.log("🚪 Sala " + (i + 1) + ": " + salasCastelo[i]);
 
 // Lógica diferente para cada sala baseada no índice
 if (i === 0) {
-console.log("📚 " + nomePersonagem + " encontra pergaminhos antigos!");
+console.log("📚 " + nomePersonagem + " encontra livros antigos!");
 experiencia += 50;
 } else if (i === 1) {
-console.log("💎 Cristais brilhantes concedem poder mágico!");
+console.log("Fruto Mágico é encontrado!");
 tesouroColetado.push("Cristal de Poder");
 } else {
-console.log("⏰ O tempo distorce ao redor de " + nomePersonagem + "!");
-vidaAtual -= 10; // Pequeno dano temporal
+console.log("🚽 Privada de ouro concede  poder mágico!");
+vidaAtual += 10; // Pequena quantia de vida adicionada
 }
 }
-
 console.log("📊 Exploração completa! XP: " + experiencia + " | Vida: " + vidaAtual);
 
+// === CAPÍTULO 3: A CONVOCAÇÃO DOS ALIADOS ===
+console.log("");
+console.log("🤝 CAPÍTULO 3: Reunindo os Aliados Arcanos");
 
+// Recrutando aliados com for tradicional
+console.log("🏹 " + nomePersonagem + " chama seus aliados para ajudar na batalha final:");
+
+for (let i = 0; i < aliados.length; i++) {
+let aliado = aliados[i];
+console.log("⚡ Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+
+// Cada posição no array determina habilidade especial
+if (i === 0) { // Primeiro aliado - Líder mágico
+console.log("🔮 Como líder mágico, " + aliado + " multiplica o poder da equipe!");
+ouro += 50;
+} else if (i === 1) { // Segundo aliado - Defensor
+console.log("🛡️ Como guardião do time, " + aliado + " ergue barreiras de proteção!");
+vidaMaxima += 30;
+} else { // Demais aliados - Especialistas
+console.log("🏹 Como especialista, " + aliado + " domina táticas de combate!");
+experiencia += 30;
+}
+}
+
+console.log("🎖️ Equipe completa! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
 
 
 

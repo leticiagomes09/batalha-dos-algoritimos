@@ -209,6 +209,31 @@ console.log("📤 Item removido: " + itemRemovido);
 console.log("🎒 Inventário atual: " + inventario);
 
 
+// === CAPÍTULO 2: O RITUAL DA EXPLORAÇÃO ===
+console.log("");
+console.log("⚔️ CAPÍTULO 2: Explorando as Masmorras Sistemáticas");
+
+// Explorando cada sala do castelo usando for tradicional
+console.log("🗺️ Começando exploração das " + salasCastelo.length + " salas místicas...");
+
+for (let i = 0; i < salasCastelo.length; i++) {
+console.log("🚪 Sala " + (i + 1) + ": " + salasCastelo[i]);
+
+// Lógica diferente para cada sala baseada no índice
+if (i === 0) {
+console.log("📚 " + nomePersonagem + " encontra pergaminhos antigos!");
+experiencia += 50;
+} else if (i === 1) {
+console.log("💎 Cristais brilhantes concedem poder mágico!");
+tesouroColetado.push("Cristal de Poder");
+} else {
+console.log("⏰ O tempo distorce ao redor de " + nomePersonagem + "!");
+vidaAtual -= 10; // Pequeno dano temporal
+}
+}
+
+console.log("📊 Exploração completa! XP: " + experiencia + " | Vida: " + vidaAtual);
+
 
 
 

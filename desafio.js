@@ -154,7 +154,6 @@ console.log("");
 console.log("📜 === CONTINUAÇÃO DA JORNADA DE " + nomePersonagem + " ===");
 console.log("");
 
-
 // EPÍLOGO - Resultado final
 if (poderInimigo <= 0) {
     console.log("🎉 VITÓRIA ÉPICA! " + nomePersonagem + " triunfa!");

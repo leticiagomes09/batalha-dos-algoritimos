@@ -167,9 +167,7 @@ console.log("");
 console.log("🏁 CAPÍTULO ENERRADO - Em breve um novo desafio te espera!"); 
 console.log("");
 
-// === CONTINUAÇÃO DA SAGA ÉPICA - NÍVEL 3 ===
-// Mantenha seu personagem dos níveis anteriores e adicione:
-
+// Nível 3
 
 // === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
 // Inventário mágico - primeira coleção arcana
@@ -260,4 +258,77 @@ experiencia += 30;
 console.log("🎖️ Equipe completa! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
 
 
+// === CAPÍTULO 4: A BATALHA FINAL DOS ARRAYS ===
+console.log("");
+console.log("🐉 CAPÍTULO 4: Batalha com as Criaturas do Castelo");
 
+// Sistema de batalha usando arrays e for tradicional
+let inimigosBatalha = ["Titã das sombras", "Guardião das trevas", "Dragão dos Cristais"];
+let danoRecebido = [];
+
+console.log("💀 " + nomePersonagem + " enfrenta " + inimigosBatalha.length + " inimigos épicos!");
+
+// Batalha usando for tradicional para controle preciso
+for (let i = 0; i < inimigosBatalha.length; i++) {
+let inimigo = inimigosBatalha[i];
+let dano = Math.floor(Math.random() * 30) + 10; // Dano entre 10 e 39
+
+console.log("⚔️ Rodada " + (i + 1) + " - Enfrentando: " + inimigo);
+console.log("💥 " + nomePersonagem + " causa " + dano + " de dano!");
+
+danoRecebido.push(dano); // Armazena dano para cálculos posteriores
+
+// Lógica especial para cada rodada baseada no índice
+if (i === 0) {
+console.log("💎 Primeira vitória! Cristais fragmentados concedem bônus!");
+tesouroColetado.push("Fragmento de Cristal");
+} else if (i === 1) {
+console.log("🌑 Segunda batalha! As sombras tentam a derrubar, mas " + nomePersonagem + " resiste!");
+vidaAtual -= 15;
+} else {
+console.log("🔥 Batalha final! O dragão desiste! Vitória épica alcançada!");
+experiencia += 100;
+tesouroColetado.push("Escama Dragônica");
+}
+}
+
+// Calculando estatísticas da batalha usando for tradicional
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+danoTotal += danoRecebido[i];
+console.log("📊 Rodada " + (i + 1) + " - Dano: " + danoRecebido[i]);
+}
+
+console.log("⚡ Dano total causado: " + danoTotal);
+console.log("🏆 Tesouros coletados: " + tesouroColetado.length + " itens épicos!");
+
+
+// === EPÍLOGO: O MESTRE DOS ARRAYS ===
+console.log("");
+console.log("👑 === EPÍLOGO: " + nomePersonagem + " - CONQUISTADORA DO CASTELO ===");
+
+// Estatísticas finais da jornada
+console.log("📈 Estatísticas Finais da Aventura:");
+console.log("• Nível alcançado: " + nivel);
+console.log("• Experiência total: " + experiencia);
+console.log("• Vida restante: " + vidaAtual + "/" + vidaMaxima);
+console.log("• Ouro acumulado: " + ouro);
+console.log("• Itens no inventário: " + inventario.length);
+console.log("• Aliados conquistados: " + aliados.length);
+console.log("• Tesouros épicos: " + tesouroColetado.length);
+
+console.log("");
+console.log("🌟 A LENDA CONTINUA...");
+console.log("Com o castelo finalmente livre das trevas, Selene pretende ir atras de novos desafios!");
+console.log("✨ O poder que");
+
+
+
+
+
+
+
+
+
+console.log("");
+console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");

@@ -319,16 +319,14 @@ console.log("• Tesouros épicos: " + tesouroColetado.length);
 
 console.log("");
 console.log("🌟 A LENDA CONTINUA...");
-console.log("Com o castelo finalmente livre das trevas, Selene pretende ir atras de novos desafios!");
-console.log("✨ O poder que");
-
-
-
-
-
-
-
-
-
+console.log("Com o castelo finalmente livre das trevas, " + nomePersonagem + " pretende ir atras de novos desafios!");
+console.log("✨ O poder que ela adquiriu flui em suas mão, lembrando-a das batalhas que enfrentou");
+console.log("Os aliados arcanos:" + aliados + " se reúnem ao seu redor, orgulhosos da vitória conquistada juntos.");
+console.log("💎Três tesouros épicos brilham em seu inventário, significando sua coragem e persistencia na batalha");
+console.log("O eco dos inimigos derrotados desaparece nas paredes antigas do castelo");
+console.log("🍃 A vida retorna o que era antes, e a magia flui livre pelos corredores esquecidos");
+console.log(nomePersonagem + " sente que este foi apenas um passo em uma jornada muito maior");
+console.log("🔥 A fama de sua vitória se espalha por todo o reino, atraindo novos desafios");
+console.log("E assim, a maga de Artenas segua adiante... pronta para enfrentas o próximo capítulo de sua lenda! ");
 console.log("");
 console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");
